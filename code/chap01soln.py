@@ -50,7 +50,7 @@ def ValidatePregnum(resp):
     preg_map = nsfg.MakePregMap(preg)
     
     # iterate through the respondent pregnum series
-    for index, pregnum in resp.pregnum.items():
+    for index, pregnum in enumerate(resp.pregnum):
         caseid = resp.caseid[index]
         indices = preg_map[caseid]
 
